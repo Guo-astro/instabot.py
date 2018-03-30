@@ -10,11 +10,11 @@ from src.follow_protocol import follow_protocol
 from src.unfollow_protocol import unfollow_protocol
 
 bot = InstaBot(
-    login="username",
-    password="password",
+    login="kodawarin",
+    password="kodawarinrin117",
     like_per_day=1000,
     comments_per_day=0,
-    tag_list=['follow4follow', 'f4f', 'cute'],
+    tag_list=['食べ物','美味しい','野菜','農家','こだわり'],
     tag_blacklist=['rain', 'thunderstorm'],
     user_blacklist={},
     max_like_for_one_tag=50,
@@ -27,15 +27,10 @@ bot = InstaBot(
     proxy='',
     # List of list of words, each of which will be used to generate comment
     # For example: "This shot feels wow!"
-    comment_list=[["this", "the", "your"],
-                  ["photo", "picture", "pic", "shot", "snapshot"],
-                  ["is", "looks", "feels", "is really"],
-                  ["great", "super", "good", "very good", "good", "wow",
-                   "WOW", "cool", "GREAT","magnificent", "magical",
-                   "very cool", "stylish", "beautiful", "so beautiful",
-                   "so stylish", "so professional", "lovely",
-                   "so lovely", "very lovely", "glorious","so glorious",
-                   "very glorious", "adorable", "excellent", "amazing"],
+    comment_list=[["これ", ],
+                  ["非常に", "を"],
+                  ["美味しい", "試して"],
+                  ["ね","見る"],
                   [".", "..", "...", "!", "!!", "!!!"]],
     # Use unwanted_username_list to block usernames containing a string
     ## Will do partial matches; i.e. 'mozart' will block 'legend_mozart'
@@ -50,7 +45,6 @@ bot = InstaBot(
         'follow', 'follower', 'gain', '.id', '_id', 'bags'
     ],
     unfollow_whitelist=['example_user_1', 'example_user_2'])
-while True:
 
     #print("# MODE 0 = ORIGINAL MODE BY LEVPASHA")
     #print("## MODE 1 = MODIFIED MODE BY KEMONG")
@@ -65,7 +59,7 @@ while True:
 
     # DON'T USE MODE 5 FOR A LONG PERIOD. YOU RISK YOUR ACCOUNT FROM GETTING BANNED
     ## USE MODE 5 IN BURST MODE, USE IT TO UNFOLLOW PEOPLE AS MANY AS YOU WANT IN SHORT TIME PERIOD
-
+while True:
     mode = 0
 
     #print("You choose mode : %i" %(mode))
