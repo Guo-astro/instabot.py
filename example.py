@@ -11,16 +11,16 @@ from src.unfollow_protocol import unfollow_protocol
 
 bot = InstaBot(
     login="kodawarin",
-    password="kodawarinrin117",
+    password="kodawarinrin1177",
     like_per_day=1000,
     comments_per_day=0,
-    tag_list=['食べ物','美味しい','野菜','農家','こだわり'],
+    tag_list=['食べ物','収穫際','野菜','農家','実り','牧場','有機栽培','有機農業','農園','玄米','栄養','食材','料理','バーベキュー','米麹','懐かしい味','畑','伝統野菜','調理','栽培','特産品','朝食','苗','旬の野菜','野菜スープ'],
     tag_blacklist=['rain', 'thunderstorm'],
     user_blacklist={},
     max_like_for_one_tag=50,
-    follow_per_day=300,
+    follow_per_day=400,
     follow_time=1 * 60,
-    unfollow_per_day=300,
+    unfollow_per_day=0,
     unfollow_break_min=15,
     unfollow_break_max=30,
     log_mod=0,
@@ -60,7 +60,7 @@ bot = InstaBot(
     # DON'T USE MODE 5 FOR A LONG PERIOD. YOU RISK YOUR ACCOUNT FROM GETTING BANNED
     ## USE MODE 5 IN BURST MODE, USE IT TO UNFOLLOW PEOPLE AS MANY AS YOU WANT IN SHORT TIME PERIOD
 while True:
-    mode = 0
+    mode = 2
 
     #print("You choose mode : %i" %(mode))
     #print("CTRL + C to cancel this operation or wait 30 seconds to start")
